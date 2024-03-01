@@ -1,42 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: left; /* Align text to the left */
+    background-color: #f9f9f9; /* Light grey background for a subtle, professional look */
+    color: #333; /* Dark grey text for readability */
 }
 
 header, footer {
-    background-color: #f4f4f4;
+    background-color: #007BFF; /* A strong color for header/footer, consider adjusting to fit your personal brand */
+    color: #ffffff;
     padding: 20px;
-    text-align: center; /* Center-align header and footer content */
+    text-align: center;
+}
+
+header h1, header p {
+    margin: 0; /* Removes default margin to maintain consistent spacing */
+}
+
+main {
+    padding: 20px; /* Adds padding around the content for better readability */
 }
 
 #projects ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 #projects li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center; /* Aligns the items (link and image) in the center */
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Subtle border for definition */
+    padding: 15px;
+    margin-bottom: 10px; /* Spacing between project entries */
+    border-radius: 5px; /* Softens the edges */
 }
 
 #projects li a {
-    font-weight: bold; /* Make the project titles bold */
-    text-decoration: none;
-    color: #333;
-    margin-right: 10px; /* Added space between the link and the description */
+    color: #007BFF; /* Matching the header/footer color for consistency */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Emphasizes project titles */
 }
 
-#projects li:last-child {
-    border-bottom: none;
+#projects img {
+    width: 80px; /* Adjusts image size for consistency */
+    height: auto;
+    border-radius: 5px; /* Rounds corners of images */
+    margin-right: 15px; /* Ensures spacing between image and text */
 }
 
-.project img {
-    width: 100px; /* Specify the width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: for rounded corners */
-    margin-right: 10px; /* Space between image and text */
+footer p {
+    margin: 0; /* Adjusts footer paragraph margin for consistency */
 }
