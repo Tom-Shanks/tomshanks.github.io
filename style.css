@@ -29,3 +29,14 @@ header, footer {
 #projects li:last-child {
     border-bottom: none;
 }
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project img {
+    margin-right: 10px;
+    border-radius: 5px; /* Optional: for rounded corners */
+}
