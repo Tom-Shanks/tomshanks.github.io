@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left; /* Align text to the left */
 }
 
 header, footer {
     background-color: #f4f4f4;
     padding: 20px;
+    text-align: center; /* Center-align header and footer content */
 }
 
 #projects ul {
@@ -18,25 +19,24 @@ header, footer {
 #projects li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center; /* Aligns the items (link and image) in the center */
 }
 
 #projects li a {
+    font-weight: bold; /* Make the project titles bold */
     text-decoration: none;
     color: #333;
-    display: block;
+    margin-right: 10px; /* Added space between the link and the description */
 }
 
 #projects li:last-child {
     border-bottom: none;
 }
 
-.project {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .project img {
-    margin-right: 10px;
+    width: 100px; /* Specify the width for images */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: for rounded corners */
+    margin-right: 10px; /* Space between image and text */
 }
